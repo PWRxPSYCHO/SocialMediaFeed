@@ -1,7 +1,7 @@
 {
-  "name": "tweetstream",
+  "name": "social_media_feed",
   "version": "1.0.0",
-  "description": "Uses Twitter API to get stream of tweets from a filtered criteria and posts them to Discord as an embedded message",
+  "description": "Uses Twitter API to get stream of tweets from a filtered criteria and posts them to Discord as an embedded message using webhooks",
   "main": "index.ts",
   "scripts": {
     "prestart": "rm -rf dist/",
@@ -10,19 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/oddsquadstreamers/tweetstream.git"
+    "url": "https://github.com/jRosenthal11/SocialMediaFeed.git"
   },
   "author": "PWRxPSYCHO",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/oddsquadstreamers/tweetstream/issues"
+    "url": "https://github.com/jRosenthal11/SocialMediaFeed/issues"
   },
-  "homepage": "https://gitlab.com/oddsquadstreamers/tweetstream#readme",
+  "homepage": "https://github.com/jRosenthal11/SocialMediaFeed/#readme",
   "dependencies": {
+    "@types/express": "^4.17.11",
     "@types/ws": "^7.4.0",
-    "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "eslint": "^7.18.0",
+    "express": "^4.17.1",
     "needle": "^2.6.0",
     "tslib": "^2.1.0",
     "typescript": "^4.1.3",

@@ -1,9 +1,9 @@
-import { Client } from "discord.js";
 import needle from "needle";
 import { TwitterResponse } from "./models/twitter-response";
 import * as dotenv from 'dotenv';
+import express from "express";
 
-const client = new Client();
+const app = express();
 const streamURL = 'https://api.twitter.com/2/tweets/search/stream';
 dotenv.config();
 
@@ -32,7 +32,7 @@ function streamConnect() {
     return stream;
 }
 
-client.on('ready', async () => {
+app.listen(3000, () => {
     const sampledStream = streamConnect();
     sampledStream.on('timeout', timeout => {
         console.warn('A connection error occured. Reconnecting...');
@@ -54,12 +54,4 @@ async function twitterEmbed(response: TwitterResponse) {
         }
         needle.post(webhookURl, body);
     }
-}
-
-
-if (process.env.DISCORD_TOKEN) {
-    client.login(process.env.DISCORD_TOKEN);
-} else {
-    console.log(`Create a file called .env and put your bot's token in there.`);
-    process.exit(1);
 }

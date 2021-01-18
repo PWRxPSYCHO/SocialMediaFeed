@@ -11,7 +11,6 @@ Add YouTube API handling to get latest video posts
 2. Create a .env file in the root directory and add the following:
 ```
 BEARER_TOKEN=
-DISCORD_TOKEN=
 WEBHOOK_URL=
 USERNAME=
 ```
@@ -34,14 +33,8 @@ USERNAME=
 You will have to create a [Twitter Developer Account](https://developer.twitter.com/en) and create an application on your account.
 Once you have an application copy the `BEARER_TOKEN` and paste it in the .env file.
 
-## Discord Token
-You will need to create a [bot application](https://discord.com/developers/applications) OR you can run this as a standalone Node.JS application. (You will have to modify the code)
-
-Once you create the application and create a bot, copy the `token` and paste it in the .env file.
-
 ## WEBHOOK URL
 On your Discord server. Click the settings icon next to a text channel you want to add the webhook to, click `integrations`, `webhooks`, *new webhooks*. Then copy the webhook url and paste it in the .env file
-
 
 ## USERNAME
 Add your twitter username to the .env file (Case sensitive).
