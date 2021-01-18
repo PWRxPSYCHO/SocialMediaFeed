@@ -1,0 +1,36 @@
+{
+  "name": "tweetstream",
+  "version": "1.0.0",
+  "description": "Uses Twitter API to get stream of tweets from a filtered criteria and posts them to Discord as an embedded message",
+  "main": "index.ts",
+  "scripts": {
+    "prestart": "rm -rf dist/",
+    "start": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/oddsquadstreamers/tweetstream.git"
+  },
+  "author": "PWRxPSYCHO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/oddsquadstreamers/tweetstream/issues"
+  },
+  "homepage": "https://gitlab.com/oddsquadstreamers/tweetstream#readme",
+  "dependencies": {
+    "@types/ws": "^7.4.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.18.0",
+    "needle": "^2.6.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.3",
+    "winston": "^3.3.3",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {
+    "@types/needle": "^2.5.1",
+    "@types/node": "^14.14.21"
+  }
+}

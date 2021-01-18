@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "Node",
+        "target": "ES5",
+        "lib": ["ES2015", "DOM"],
+        "outDir": "dist",
+        "typeRoots": ["node_modules/@types"],
+        "rootDir": "src",
+        "strict": true,
+        "types": ["node"],
+        "module": "commonjs",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true
+    },
+    "exclude": ["node_modules"]
+}
