@@ -46,10 +46,13 @@ On your Discord server. Click the settings icon next to a text channel you want 
 ## USERNAME
 Add your twitter username to the .env file (Case sensitive).
 
-Luckily Discord automatically formats Tweets as embedded messages in a nice and fancy layout so all we need to do is get the url of the tweet we want to post. 
-
-
 # Run the Bot
+Luckily Discord automatically formats Tweets as embedded messages in a nice and fancy layout so all we need to do is get the url of the tweet we want to post.
+
+`https://twitter.com/<username>/status/<tweetId>`
+
+<Username>: is provided in .env
+<tweetId>: is returned through the filteredstream
 
 Compile the typescript by running `tsc`
 Then start it up with `npm run start`
