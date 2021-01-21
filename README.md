@@ -44,8 +44,9 @@ Luckily Discord automatically formats Tweets as embedded messages in a nice and 
 
 `https://twitter.com/<username>/status/<tweetId>`
 
-<Username>: is provided in .env
-<tweetId>: is returned through the filteredstream
+`username`: is provided in .env
+
+`tweetId`: is returned through the filteredstream
 
 Compile the typescript by running `tsc`
 Then start it up with `npm run start`
